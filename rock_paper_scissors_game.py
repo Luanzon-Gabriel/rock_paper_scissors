@@ -9,6 +9,7 @@ while running:
     computer = random.choice(options)
 
     while player not in options:
+        print("Choices are rock, paper, scissors only")
         player = input("Enter a choice (rock, paper, scissors): ")
 
     print(f"Player: {player}")
