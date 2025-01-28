@@ -3,6 +3,8 @@ import random
 options = ("rock", "paper", "scissors")
 running = True
 
+player_name = input("Enter your name great warrior!!")
+
 while running:
 
     player = None
