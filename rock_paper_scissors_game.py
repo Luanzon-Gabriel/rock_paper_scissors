@@ -18,6 +18,8 @@ while running:
         print("Choices are rock, paper, scissors only")
         player = input("Enter a choice (rock, paper, scissors): ").strip().lower()
 
+    rounds_played += 1
+    print(f"\nRound {rounds_played} - Player: {player}, Computer: {computer}")
     print(f"Player: {player}")
     print(f"Computer: {computer}")
 
