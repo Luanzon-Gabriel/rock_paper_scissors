@@ -35,6 +35,12 @@ while running:
             print("You lose!")
             leaderboard["losses"] += 1
 
+    print("\nLeaderboard:")
+    print(f"Player: {player_name}")
+    print(f"Wins: {leaderboard['wins']}")
+    print(f"Losses: {leaderboard['losses']}")
+    print(f"Ties: {leaderboard['ties']}")
+
     play_again = input("Play again? (y/n): ").lower()
     if not play_again == "y":
                     running = False
