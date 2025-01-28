@@ -17,16 +17,23 @@ while running:
     print(f"Player: {player}")
     print(f"Computer: {computer}")
 
+    leaderboard = {"wins": 0, "losses": 0, "ties": 0}
+
     if player == computer:
             print("It's a tie!")
+            leaderboard["ties"] += 1
     elif player == "rock" and computer == "scissors":
             print("You win!")
+            leaderboard["wins"] += 1
     elif player == "paper" and computer == "rock":
             print("You win!")
+            leaderboard["wins"] += 1
     elif player == "scissors" and computer == "paper":
             print("You win!")
+            leaderboard["wins"] += 1
     else:
             print("You lose!")
+            leaderboard["losses"] += 1
 
     play_again = input("Play again? (y/n): ").lower()
     if not play_again == "y":
