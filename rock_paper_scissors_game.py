@@ -44,4 +44,9 @@ while running:
     play_again = input("Play again? (y/n): ").lower()
     if not play_again == "y":
                     running = False
-print("Thanks for playing!")
+
+print("\nFinal Leaderboard:")
+print(f"Player: {player_name}")
+print(f"Wins: {leaderboard['wins']}")
+print(f"Losses: {leaderboard['losses']}")
+print(f"Ties: {leaderboard['ties']}")
