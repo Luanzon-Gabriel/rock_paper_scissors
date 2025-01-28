@@ -5,6 +5,8 @@ running = True
 
 player_name = input("Enter your name great warrior!:")
 
+leaderboard = {"wins": 0, "losses": 0, "ties": 0}
+
 while running:
 
     player = None
@@ -17,7 +19,6 @@ while running:
     print(f"Player: {player}")
     print(f"Computer: {computer}")
 
-    leaderboard = {"wins": 0, "losses": 0, "ties": 0}
 
     if player == computer:
             print("It's a tie!")
