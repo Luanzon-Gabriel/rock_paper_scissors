@@ -12,7 +12,7 @@ while running:
 
     while player not in options:
         print("Choices are rock, paper, scissors only")
-        player = input("Enter a choice (rock, paper, scissors): ")
+        player = input("Enter a choice (rock, paper, scissors): ").strip().lower()
 
     print(f"Player: {player}")
     print(f"Computer: {computer}")
