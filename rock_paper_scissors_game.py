@@ -7,6 +7,8 @@ player_name = input("Enter your name great warrior!:")
 
 leaderboard = {"wins": 0, "losses": 0, "ties": 0}
 
+rounds_played = 0
+
 while running:
 
     player = None
